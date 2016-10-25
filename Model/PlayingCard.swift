@@ -37,7 +37,7 @@ class PlayingCard : Card
         return UIColor()
     }
     
-    func toString() -> String
+    override func toString() -> String
     {
         let description = "The cards rank is\(rank), it has a suit of \(suit), and it has a color of\(color)"
         return description

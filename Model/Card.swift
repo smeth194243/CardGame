@@ -16,12 +16,12 @@ class Card
         {
             return self.backImage
         }
-        set(backImage = backImage
+        set(backImage) = backImage
         {
             self.backImage = backImage
         }
         
-    
+    }
     private var isFaceUp : Bool
     
     init ()

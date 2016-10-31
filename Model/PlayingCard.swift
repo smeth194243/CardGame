@@ -41,12 +41,20 @@ class PlayingCard : Card
    
     override init()
     {
-        suit = ""
-        color = UIColor()
         super.init()
+        suit = String()
+        color = UIColor.greenColor()
         rank = 0
     }
   //------------------------------------------------------------------------------
+    init(withRank: Int, ofSuit:String)
+    {
+        super.init()
+        suit = ofSuit
+        color = UIColor.greenColor()
+        rank = withRank
+    }
+    
     func getRank() -> Int
     {
        return rank
@@ -90,7 +98,8 @@ class PlayingCard : Card
         return ["??", "A","2","3","4","5","6","7","8","9","10","J","Q","K",]
     }
     
-    class func maxRank () -> Int{
+    class func maxRank () -> Int
+    {
         return validRanks().count - 1
     }
     
@@ -98,5 +107,7 @@ class PlayingCard : Card
     {
         return ["♦️","♠️","♥️","♣️"]
     }
+    
+    class func
     
 }

@@ -58,6 +58,7 @@ bg=blue</panel_attributes>
 + getSuit() : String
 + getColor() : UIColor
 + init() : Initializer
++withRank() : int, ofSuit:String : int
 + toString() : String
 bg=yellow
 </panel_attributes>

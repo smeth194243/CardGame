@@ -16,17 +16,27 @@ class Card
         {
             return self.backImage
         }
-        set(backImage) = backImage
+        set(backImage)
         {
             self.backImage = backImage
         }
         
     }
     internal var isFaceUp : Bool
+    {
+        get
+        {
+            return self.isFaceUp
+        }
+        set(isFaceUp)
+        {
+            self.isFaceUp = isFaceUp
+        }
+    }
     
     init ()
     {
-        backImage = UIImage()
+        backImage = UIImage(named: "Card Design")!
         isFaceUp = false
     }
     

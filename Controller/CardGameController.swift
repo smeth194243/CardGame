@@ -24,7 +24,10 @@ class CardGameController : UIViewController
     
     @IBAction func cardClick(sender: UIButton)
     {
+        clickCount += 1
+        
         let content = "You clicked \(clickCount) times"
+        
         cardLabel.text = content
     }
     

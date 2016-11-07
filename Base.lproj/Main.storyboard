@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card Game Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CardGameController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,13 +23,60 @@
                                 <state key="normal" title="Words" image="Card Design">
                                     <color key="titleColor" red="0.4187250555" green="1" blue="0.26042574889999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="47" y="321" width="306" height="158"/>
                                 </variation>
+                                <connections>
+                                    <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxj-km-Z4P"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNS-Ua-G2b">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="47" y="95" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="duF-1M-2ag" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KCy-hD-YJb"/>
+                            <constraint firstItem="duF-1M-2ag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rju-kg-v12"/>
+                            <constraint firstItem="lNS-Ua-G2b" firstAttribute="leading" secondItem="duF-1M-2ag" secondAttribute="leading" id="ZwX-RY-cEK"/>
+                            <constraint firstItem="duF-1M-2ag" firstAttribute="top" secondItem="lNS-Ua-G2b" secondAttribute="top" id="aeu-eM-5t1"/>
+                            <constraint firstItem="lNS-Ua-G2b" firstAttribute="width" secondItem="duF-1M-2ag" secondAttribute="width" id="cLw-QK-jMe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lNS-Ua-G2b"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ZwX-RY-cEK"/>
+                                <exclude reference="cLw-QK-jMe"/>
+                                <exclude reference="KCy-hD-YJb"/>
+                                <exclude reference="Rju-kg-v12"/>
+                                <exclude reference="aeu-eM-5t1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lNS-Ua-G2b"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ZwX-RY-cEK"/>
+                                <include reference="cLw-QK-jMe"/>
+                                <include reference="KCy-hD-YJb"/>
+                                <include reference="Rju-kg-v12"/>
+                                <include reference="aeu-eM-5t1"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="cardButton" destination="duF-1M-2ag" id="1Xk-fw-QAs"/>
+                        <outlet property="cardLabel" destination="lNS-Ua-G2b" id="ijz-BT-bt8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

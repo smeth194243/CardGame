@@ -14,7 +14,21 @@ class Deck
     
     func shuffleDeck() -> Void
     {
+        //Created a temp variable to hold cards
+        var tempDeck = [Card]()
         
+        //Repeat until cards data member is empty
+        while
+        {
+            //Get a random number between 0...cards.count -1
+            let randomIndex = Int (arc4random() % (UInt32)(cards.count))
+            //Remove the card at that index from the deck
+            let removedCard = cards.removeAtIndex(randomIndex)
+            //Place that card in the temporary array
+            tempDeck.append(removedCard)
+        }
+        //Replace the data meember with the updated
+        self.cards = tempDeck
     }
     
     func cutDeck() -> Void

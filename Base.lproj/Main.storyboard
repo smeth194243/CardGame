@@ -17,47 +17,342 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duF-1M-2ag">
-                                <rect key="frame" x="185" y="219" width="231" height="162"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUJ-Ct-s49">
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="323" y="87" width="54" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alj-uR-IC9">
+                                <rect key="frame" x="217" y="243" width="166" height="114"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="162" id="1Ki-cH-X66"/>
-                                    <constraint firstAttribute="width" constant="231" id="yiN-VF-4de"/>
+                                    <constraint firstAttribute="width" constant="166" id="JNv-Pn-lLL">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="114" id="KDE-9V-ara">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <state key="normal" title="Flip the Card" backgroundImage="Card Design">
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAI-85-Xut">
+                                <rect key="frame" x="217" y="365" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="a3Z-Hj-Fqi">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="166" id="faX-ul-IZ4">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pI6-K6-Qsb">
+                                <rect key="frame" x="391" y="243" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="ocf-WS-1Ea">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="114" id="sAw-YD-2dA">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="66" y="340" width="268" height="120"/>
                                 </variation>
                                 <connections>
-                                    <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxj-km-Z4P"/>
+                                    <action selector="ac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhU-GB-BiD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUJ-Ct-s49">
-                                <rect key="frame" x="185" y="142" width="231" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUM-sv-vqF">
+                                <rect key="frame" x="391" y="358" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="Mvk-hy-u9c">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="166" id="uE7-7l-74u">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVn-xZ-wbO">
+                                <rect key="frame" x="217" y="121" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="FLn-VG-F1g">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="114" id="Yjd-Lw-aNQ">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJV-sS-iaZ">
+                                <rect key="frame" x="391" y="121" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="3PA-R7-K6S">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="114" id="ad6-My-G2N">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpV-5f-YFY">
+                                <rect key="frame" x="43" y="121" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="QPB-SB-1Xg">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="114" id="wta-Sk-TD5">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdw-AM-6jZ">
+                                <rect key="frame" x="43" y="243" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="dsm-el-5p2">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="166" id="gN3-dm-9Xm">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMU-b4-7uQ">
+                                <rect key="frame" x="43" y="365" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="Dy2-8A-gL1">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="166" id="hjC-mp-3GC">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsp-vM-NGU">
+                                <rect key="frame" x="43" y="365" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="jqU-2J-LRP">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="114" id="mgQ-aU-99a">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyn-h2-MDs">
+                                <rect key="frame" x="43" y="365" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="3dV-Jx-wRQ">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="114" id="Rv3-Qy-MtB">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69L-c6-l4A">
+                                <rect key="frame" x="43" y="365" width="166" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="B1Y-qO-sPu">
+                                        <variation key="widthClass=compact" constant="83"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="115"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="114" id="QAo-Fv-RIV">
+                                        <variation key="widthClass=compact" constant="57"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="81"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Flip Card" backgroundImage="Card Design">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="66" y="340" width="268" height="120"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="duF-1M-2ag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NW2-g0-JCd"/>
-                            <constraint firstItem="ZUJ-Ct-s49" firstAttribute="leading" secondItem="duF-1M-2ag" secondAttribute="leading" id="WvH-gh-R7y"/>
-                            <constraint firstItem="duF-1M-2ag" firstAttribute="top" secondItem="ZUJ-Ct-s49" secondAttribute="bottom" constant="56" id="cL0-XR-lXt"/>
-                            <constraint firstItem="ZUJ-Ct-s49" firstAttribute="width" secondItem="duF-1M-2ag" secondAttribute="width" id="k2A-sO-Ki5"/>
-                            <constraint firstItem="duF-1M-2ag" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="skG-4M-zmc"/>
+                            <constraint firstItem="hUM-sv-vqF" firstAttribute="leading" secondItem="pI6-K6-Qsb" secondAttribute="leading" id="0Lf-du-MgI"/>
+                            <constraint firstItem="cyn-h2-MDs" firstAttribute="top" secondItem="hUM-sv-vqF" secondAttribute="bottom" constant="8" id="36H-jU-xzP"/>
+                            <constraint firstItem="Tsp-vM-NGU" firstAttribute="top" secondItem="69L-c6-l4A" secondAttribute="top" id="5cN-Uk-1H2"/>
+                            <constraint firstItem="Tsp-vM-NGU" firstAttribute="top" secondItem="mMU-b4-7uQ" secondAttribute="bottom" constant="8" id="7li-6i-VFb"/>
+                            <constraint firstItem="TAI-85-Xut" firstAttribute="top" secondItem="alj-uR-IC9" secondAttribute="bottom" constant="8" id="9CN-6g-c5T"/>
+                            <constraint firstItem="YVn-xZ-wbO" firstAttribute="leading" secondItem="LpV-5f-YFY" secondAttribute="trailing" constant="8" id="9hf-Li-uNT"/>
+                            <constraint firstItem="cyn-h2-MDs" firstAttribute="leading" secondItem="69L-c6-l4A" secondAttribute="trailing" constant="8" id="ASZ-2K-hyO"/>
+                            <constraint firstItem="gJV-sS-iaZ" firstAttribute="leading" secondItem="pI6-K6-Qsb" secondAttribute="leading" id="Ff4-QC-jGX">
+                                <variation key="widthClass=compact" constant="7"/>
+                            </constraint>
+                            <constraint firstItem="69L-c6-l4A" firstAttribute="leading" secondItem="Tsp-vM-NGU" secondAttribute="trailing" constant="8" id="HMx-Up-hg1"/>
+                            <constraint firstItem="mMU-b4-7uQ" firstAttribute="leading" secondItem="Tsp-vM-NGU" secondAttribute="leading" id="HrU-qV-HJ1"/>
+                            <constraint firstItem="mMU-b4-7uQ" firstAttribute="top" secondItem="TAI-85-Xut" secondAttribute="top" id="NFz-Lf-Q41"/>
+                            <constraint firstItem="alj-uR-IC9" firstAttribute="leading" secondItem="bdw-AM-6jZ" secondAttribute="trailing" constant="8" id="PRZ-xo-d0R"/>
+                            <constraint firstItem="TAI-85-Xut" firstAttribute="leading" secondItem="alj-uR-IC9" secondAttribute="leading" id="UWc-dc-H0u"/>
+                            <constraint firstItem="TAI-85-Xut" firstAttribute="leading" secondItem="mMU-b4-7uQ" secondAttribute="trailing" constant="8" id="Xl3-Rk-BAG"/>
+                            <constraint firstItem="YVn-xZ-wbO" firstAttribute="leading" secondItem="alj-uR-IC9" secondAttribute="leading" id="bW8-ct-LvJ"/>
+                            <constraint firstItem="69L-c6-l4A" firstAttribute="top" secondItem="TAI-85-Xut" secondAttribute="bottom" constant="8" id="bj0-Ux-3Ch"/>
+                            <constraint firstItem="LpV-5f-YFY" firstAttribute="top" secondItem="YVn-xZ-wbO" secondAttribute="top" id="e2n-NU-WcC"/>
+                            <constraint firstItem="cyn-h2-MDs" firstAttribute="top" secondItem="69L-c6-l4A" secondAttribute="top" id="eAp-e8-8Fb"/>
+                            <constraint firstItem="hUM-sv-vqF" firstAttribute="top" secondItem="pI6-K6-Qsb" secondAttribute="bottom" constant="1" id="eV0-BM-mqI">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="pI6-K6-Qsb" firstAttribute="top" secondItem="alj-uR-IC9" secondAttribute="top" id="iUA-41-a5v"/>
+                            <constraint firstItem="alj-uR-IC9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iZR-iE-3Iy"/>
+                            <constraint firstItem="69L-c6-l4A" firstAttribute="leading" secondItem="TAI-85-Xut" secondAttribute="leading" id="lQT-hu-LZK"/>
+                            <constraint firstItem="alj-uR-IC9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lkZ-ec-lt8">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.5"/>
+                            </constraint>
+                            <constraint firstItem="bdw-AM-6jZ" firstAttribute="top" secondItem="alj-uR-IC9" secondAttribute="top" id="pns-Ty-hND"/>
+                            <constraint firstItem="pI6-K6-Qsb" firstAttribute="leading" secondItem="alj-uR-IC9" secondAttribute="trailing" constant="8" id="s4e-kT-rSe">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="pI6-K6-Qsb" firstAttribute="top" secondItem="gJV-sS-iaZ" secondAttribute="bottom" constant="8" id="uUq-zd-1g2"/>
+                            <constraint firstItem="alj-uR-IC9" firstAttribute="top" secondItem="YVn-xZ-wbO" secondAttribute="bottom" constant="8" id="yma-MJ-xcc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Tsp-vM-NGU"/>
+                                <exclude reference="cyn-h2-MDs"/>
+                                <exclude reference="69L-c6-l4A"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="HrU-qV-HJ1"/>
+                                <exclude reference="5cN-Uk-1H2"/>
+                                <exclude reference="7li-6i-VFb"/>
+                                <exclude reference="HMx-Up-hg1"/>
+                                <exclude reference="bj0-Ux-3Ch"/>
+                                <exclude reference="lQT-hu-LZK"/>
+                                <exclude reference="36H-jU-xzP"/>
+                                <exclude reference="ASZ-2K-hyO"/>
+                                <exclude reference="eAp-e8-8Fb"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Tsp-vM-NGU"/>
+                                <include reference="cyn-h2-MDs"/>
+                                <include reference="69L-c6-l4A"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="HrU-qV-HJ1"/>
+                                <include reference="5cN-Uk-1H2"/>
+                                <include reference="7li-6i-VFb"/>
+                                <include reference="HMx-Up-hg1"/>
+                                <include reference="bj0-Ux-3Ch"/>
+                                <include reference="lQT-hu-LZK"/>
+                                <include reference="36H-jU-xzP"/>
+                                <include reference="ASZ-2K-hyO"/>
+                                <include reference="eAp-e8-8Fb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="cardButton" destination="duF-1M-2ag" id="1Xk-fw-QAs"/>
-                        <outlet property="cardLabel" destination="ZUJ-Ct-s49" id="wxg-wz-tD8"/>
+                        <outlet property="actionB" destination="cyn-h2-MDs" id="WBU-oP-qdD"/>
+                        <outlet property="sf" destination="cyn-h2-MDs" id="hHe-Ei-3JF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="243" y="429"/>
+            <point key="canvasLocation" x="352.5" y="486"/>
         </scene>
     </scenes>
     <resources>

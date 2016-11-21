@@ -316,11 +316,11 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="HrU-qV-HJ1"/>
-                                <exclude reference="5cN-Uk-1H2"/>
-                                <exclude reference="7li-6i-VFb"/>
                                 <exclude reference="HMx-Up-hg1"/>
                                 <exclude reference="bj0-Ux-3Ch"/>
                                 <exclude reference="lQT-hu-LZK"/>
+                                <exclude reference="5cN-Uk-1H2"/>
+                                <exclude reference="7li-6i-VFb"/>
                                 <exclude reference="36H-jU-xzP"/>
                                 <exclude reference="ASZ-2K-hyO"/>
                                 <exclude reference="eAp-e8-8Fb"/>
@@ -334,11 +334,11 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="HrU-qV-HJ1"/>
-                                <include reference="5cN-Uk-1H2"/>
-                                <include reference="7li-6i-VFb"/>
                                 <include reference="HMx-Up-hg1"/>
                                 <include reference="bj0-Ux-3Ch"/>
                                 <include reference="lQT-hu-LZK"/>
+                                <include reference="5cN-Uk-1H2"/>
+                                <include reference="7li-6i-VFb"/>
                                 <include reference="36H-jU-xzP"/>
                                 <include reference="ASZ-2K-hyO"/>
                                 <include reference="eAp-e8-8Fb"/>

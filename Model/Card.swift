@@ -6,22 +6,15 @@
 //  Copyright © 2016 Morris, Seth. All rights reserved.
 //
 
-import UIKit
+
 
 class Card
 {
-    internal var backImage : UIImage
     internal var isFaceUp : Bool
     
     init ()
     {
-        backImage = UIImage(named: "Card Design")!
-        isFaceUp = false
-    }
-    
-    func getBackImage() -> UIImage
-    {
-        return backImage
+                isFaceUp = false
     }
     
     func isFacing() -> Bool
@@ -34,14 +27,9 @@ class Card
         self.isFaceUp = isFaceUp
     }
     
-    func setBackImage(backImage : UIImage)
-    {
-        self.backImage = backImage
-    }
-    
     func toString() -> String
     {
-        let description = "This card \(isFaceUp) and \(self.getBackImage()) is the image."
+        let description = "This card \(isFaceUp)"
         return description
     }
 }

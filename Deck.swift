@@ -27,7 +27,7 @@ class Deck
             //Place that card in the temporary array
             tempDeck.append(removedCard)
         }
-        //Replace the data meember with the updated
+        //Replace the data member with the updated
         self.cards = tempDeck
     }
     

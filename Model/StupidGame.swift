@@ -22,14 +22,57 @@ class StupidGame
     
     init()
     {
-        gameDeck = PlayingCardDeck()
-        gameScore = 0
+        self.gameDeck = PlayingCardDeck()
+        //gameScore = 0
+        self.hand = [PlayingCard]()
+        self.score = 0
     }
     
-    func startGame()
+    func startGame() -> Void
     {
-        gameScore = 0
+        gameDeck.shuffleDeck()
         
+        //layoutDeck()
+        //drawCards()
         
+    }
+    
+   private func drawCards() -> Void
+    {
+       hand.append((gameDeck.drawCard() as? PlayingCard)!)
+       hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        
+    }
+    
+    func checkMatch() ->Bool
+    {
+        let hasMatch : Bool
+        if(hand[0].rank == hand[1].rank) || (hand[0].suit == hand[1].suit)
+        {
+            hasMatch = true
+        }
+        else
+        {
+            hasMatch = false
+        }
+        
+        return hasMatch
+    }
+    
+    func playMatchGame() -> Void
+    {
+        if gameDeck.cards.cout > 0
+        {
+            if checkMatch()
+            {
+                score += 5
+            }
+            else
+            {
+                score -= 2
+            }
+        }
+        hand.removeAll()
+        drawCards()
     }
 }

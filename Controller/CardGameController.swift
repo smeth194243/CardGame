@@ -14,7 +14,21 @@ class CardGameController : UIViewController
     private lazy var cardDeck = PlayingCardDeck()
     
 
-    @IBOutlet weak var cardButton: UIButton!
+    @IBOutlet weak var card1: UIButton!
+    @IBOutlet weak var card2: UIButton!
+    @IBOutlet weak var card3: UIButton!
+    @IBOutlet weak var card4: UIButton!
+    @IBOutlet weak var card5: UIButton!
+    @IBOutlet weak var card6: UIButton!
+    @IBOutlet weak var card7: UIButton!
+    @IBOutlet weak var card8: UIButton!
+    @IBOutlet weak var card9: UIButton!
+    @IBOutlet weak var card10: UIButton!
+    @IBOutlet weak var card11: UIButton!
+    @IBOutlet weak var card12: UIButton!
+    
+    
+    //@IBOutlet weak var cardButton: UIButton!
     
     override func viewDidLoad() -> Void
     {
@@ -29,11 +43,11 @@ class CardGameController : UIViewController
         
         if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
         {
-            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+            card1.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
         }
         else
         {
-            cardButton.setTitle("Deck over.", forState: UIControlState.Normal)
+            card1.setTitle("Deck over.", forState: UIControlState.Normal)
         }
         
         //cardLabel.text = content

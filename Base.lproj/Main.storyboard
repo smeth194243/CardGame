@@ -347,6 +347,18 @@
                     </view>
                     <connections>
                         <outlet property="actionB" destination="cyn-h2-MDs" id="WBU-oP-qdD"/>
+                        <outlet property="card1" destination="LpV-5f-YFY" id="CPe-tR-TrS"/>
+                        <outlet property="card10" destination="Tsp-vM-NGU" id="sIM-yD-bT7"/>
+                        <outlet property="card11" destination="69L-c6-l4A" id="IFc-8f-wKe"/>
+                        <outlet property="card12" destination="cyn-h2-MDs" id="FiG-zM-rfc"/>
+                        <outlet property="card2" destination="YVn-xZ-wbO" id="VNy-aw-XDs"/>
+                        <outlet property="card3" destination="gJV-sS-iaZ" id="Tqx-je-KKZ"/>
+                        <outlet property="card4" destination="bdw-AM-6jZ" id="d3z-VF-yVJ"/>
+                        <outlet property="card5" destination="alj-uR-IC9" id="GRi-Q4-Yfb"/>
+                        <outlet property="card6" destination="pI6-K6-Qsb" id="Gzp-4E-ycg"/>
+                        <outlet property="card7" destination="mMU-b4-7uQ" id="Vme-mc-ebV"/>
+                        <outlet property="card8" destination="TAI-85-Xut" id="4fd-jF-crV"/>
+                        <outlet property="card9" destination="hUM-sv-vqF" id="URy-f6-bkv"/>
                         <outlet property="sf" destination="cyn-h2-MDs" id="hHe-Ei-3JF"/>
                     </connections>
                 </viewController>

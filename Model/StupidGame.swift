@@ -11,7 +11,8 @@ import Foundation
 class StupidGame
 {
     internal var gameDeck : PlayingCardDeck
-    
+    internal var gameCard : PlayingCard
+    internal var hand : [PlayingCard]
     internal var gameScore : Int
     internal var showFaceMatching : Void
     internal var setValue : Void
@@ -23,14 +24,14 @@ class StupidGame
     init()
     {
         self.gameDeck = PlayingCardDeck()
-        //gameScore = 0
-        self.hand = [PlayingCard]()
-        self.score = 0
+        self.gameCard = PlayingCard()
+        self.gameScore = 0
+        hand = [PlayingCard]()
     }
     
     func startGame() -> Void
     {
-        gameDeck.shuffleDeck()
+         gameDeck.shuffleDeck()
         
         //layoutDeck()
         //drawCards()
@@ -61,15 +62,15 @@ class StupidGame
     
     func playMatchGame() -> Void
     {
-        if gameDeck.cards.cout > 0
+        if gameDeck.cards.count > 0
         {
             if checkMatch()
             {
-                score += 5
+                gameScore += 5
             }
             else
             {
-                score -= 2
+                gameScore -= 2
             }
         }
         hand.removeAll()

@@ -11,69 +11,51 @@ import Foundation
 class StupidGame
 {
     internal var gameDeck : PlayingCardDeck
-    internal var gameCard : PlayingCard
-    internal var hand : [PlayingCard]
+    internal var playerHand : [PlayingCard]
     internal var gameScore : Int
-    internal var showFaceMatching : Void
-    internal var setValue : Void
-    internal var flipCards : Void
-    internal var scrambleCards: Void
-    internal var showCard : Void
+    internal var cardFaceUp: Bool
     
     
     init()
     {
-        self.gameDeck = PlayingCardDeck()
-        self.gameCard = PlayingCard()
-        self.gameScore = 0
-        hand = [PlayingCard]()
+        gameDeck = PlayingCardDeck()
+        playerHand = [PlayingCard]()
+        gameScore = 0
+        cardFaceUp = false
     }
     
     func startGame() -> Void
     {
          gameDeck.shuffleDeck()
-        
-        //layoutDeck()
-        //drawCards()
+        layOutDeck()
+    }
+    
+   fileprivate func layOutDeck() -> Void
+    {
+        gameScore = 0
+        for cardPlace in 0 ..< 4
+        {
+            playerHand.append((gameDeck.drawCard as? PlayingCard)!)
+        }
         
     }
     
-   private func drawCards() -> Void
+    func switchCard() ->Bool
     {
-       hand.append((gameDeck.drawCard() as? PlayingCard)!)
-       hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        var tempCard = Card()
+        var top = gameDeck.cards.remove(at: 0)
+        tempCard = playerHand.remove(at: 0)
+        playerHand.insert(top as! PlayingCard, at: 0)
         
     }
     
-    func checkMatch() ->Bool
+    func checkMatch() -> Void
     {
-        let hasMatch : Bool
-        if(hand[0].rank == hand[1].rank) || (hand[0].suit == hand[1].suit)
-        {
-            hasMatch = true
-        }
-        else
-        {
-            hasMatch = false
-        }
         
-        return hasMatch
     }
     
-    func playMatchGame() -> Void
+    func playGame() -> Void
     {
-        if gameDeck.cards.count > 0
-        {
-            if checkMatch()
-            {
-                gameScore += 5
-            }
-            else
-            {
-                gameScore -= 2
-            }
-        }
-        hand.removeAll()
-        drawCards()
+        
     }
 }

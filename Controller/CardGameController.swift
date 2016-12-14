@@ -10,8 +10,10 @@ import UIKit
 
 class CardGameController : UIViewController
 {
-    private lazy var clickCount = Int()
-    private lazy var cardDeck = PlayingCardDeck()
+    fileprivate lazy var clickCount = Int()
+    fileprivate lazy var selection = Bool()
+    fileprivate lazy var secondarySelection = Bool()
+    fileprivate lazy var myGame = StupidGame()
     
 
     @IBOutlet weak var card1: UIButton!
@@ -33,17 +35,25 @@ class CardGameController : UIViewController
     override func viewDidLoad() -> Void
     {
         let tempCard = Card()
-        print(tempCard.toString())
+        print(tempCard.toString)
+        selection = false
+        secondarySelection = false
+        myGame.startGame()
+        
     }
     
-    @IBAction func ac(sender: UIButton) {
+    @IBAction func checkDeck(sender: UIButton)
+    {
+        selection = false
         clickCount += 1
         
-        //let content = "You clicked \(clickCount) times"
-        
-        if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
+        if let currentCard = myGame.gameDeck.setCard() as? PlayingCard
         {
-            card1.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+            secondarySelection = false
+            card1.backgroundColor = UIColor.black
+            myGame.setCard()
+            switchMatch.setTitle("\(currentCard.getCardData())", for: UIControlState())
+            card1.
         }
         else
         {

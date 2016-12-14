@@ -44,8 +44,9 @@ class StupidGame
     {
         var tempCard = Card()
         var top = gameDeck.cards.remove(at: 0)
-        tempCard = playerHand.remove(at: 0)
-        playerHand.insert(top as! PlayingCard, at: 0)
+        playerHand.insert((top as? PlayingCard)!, at: 0)
+       gameDeck.cards.insert(tempcard, at: 0)
+        
         
     }
     
@@ -57,5 +58,11 @@ class StupidGame
     func playGame() -> Void
     {
         
+    }
+    
+    func setCard() -> Card?
+    {
+        let currentCard = gameDeck.drawRandomCard()
+        gameDeck.cards[0] = currentCard
     }
 }
